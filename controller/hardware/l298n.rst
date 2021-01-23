@@ -8,16 +8,19 @@ Configuration Options
 +-------------------+-------------+--------------------------------------------+
 |Variable           |Default Value|Description                                 |
 +===================+=============+============================================+
-|``StepPinForward`` |``12,16``    |                                            |
+|``StepPinForward`` |``12,16``    |    Pin Numbers (Not GPIO)                  |
 +-------------------+-------------+--------------------------------------------+
-|``StepPinBackward``|``11,15``    |                                            |
+|``StepPinBackward``|``11,15``    |     Pin Numbers (Not GPIO)                 |
 +-------------------+-------------+--------------------------------------------+
-|``StepPinLeft``    |``15,12``    |                                            |
+|``StepPinLeft``    |``15,12``    |     Pin Numbers (Not GPIO)                 |
 +-------------------+-------------+--------------------------------------------+
-|``StepPinRight``   |``11,16``    |                                            |
+|``StepPinRight``   |``11,16``    |      Pin Numbers (Not GPIO)                |
 +-------------------+-------------+--------------------------------------------+
 |``sleeptime``      |``0.2``      |Change to adjust driving speed              |
 +-------------------+-------------+--------------------------------------------+
 |``rotatetimes``    |``5``        |Change this to adjust the turning. Will be  |
 |                   |             |multiplied with ``sleeptime``.              |
 +-------------------+-------------+--------------------------------------------+
+
+** You'll have to enable Motor1 and Enable Motor Two High this code doesn't appear to support toggling this GPIO
+*** 3.3V Logic Triggers Device Just Fine
